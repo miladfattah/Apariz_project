@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Iran';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url('/app/assets/fonts/IRANSansWeb-Light-SWD.woff2') format('woff2'),
+		url('/app/assets/fonts/IRANSansWeb-Light-SWD.woff') format('woff');
+}

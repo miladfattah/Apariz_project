@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="آپاریز">
+        <meta name="keywords" content="آپاریز,اردبیل">
+        <title>12آپاریز</title>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.2.2/dist/font-face.css" rel="stylesheet" type="text/css" />   
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="nav-item"><a href="#">درباره‌ما</a></li>
+                <li class="nav-item"><a href="#">تماس ‌باما</a></li>
+                <li class="nav-item"><a href="#">ــــــــــــوالات متداول</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-section">
+            <div class="brand">
+                <h4 class="brand-text">ـــــــــــــامانه حمل و نقل هوشمند</h4>
+                <div class="brand-name">
+                    <img src="./background/LOGO.jpg" alt="logo">
+                </div>
+            </div>
+        </div> 
+
+        <main>
+            <h3 class="main-text">اقای علی علیزاده خیاوی خوش‌آمدید</h3>
+            <div class="form-box">
+                <form action="" id="form">
+                    <div class="input-group selected right-">
+                        <select id="state" onChange="iranwebsv(this.value);"  class="state-select" >
+                            <option value="0" >لطفا استان را انتخاب نمایید</option>
+                            <option value="1">تهران</option>
+                            <option value="2">گیلان</option>
+                            <option value="3">آذربایجان شرقی</option>
+                            <option value="4">خوزستان</option>
+                            <option value="5">فارس</option>
+                            <option value="6">اصفهان</option>
+                            <option value="7">خراسان رضوی</option>
+                            <option value="8">قزوین</option>
+                            <option value="9">سمنان</option>
+                            <option value="10">قم</option>
+                            <option value="11">مرکزی</option>
+                            <option value="12">زنجان</option>
+                            <option value="13">مازندران</option>
+                            <option value="14">گلستان</option>
+                            <option value="15" >اردبیل</option>
+                            <option value="16">آذربایجان غربی</option>
+                            <option value="17">همدان</option>
+                            <option value="18">کردستان</option>
+                            <option value="19">کرمانشاه</option>
+                            <option value="20">لرستان</option>
+                            <option value="21">بوشهر</option>
+                            <option value="22">کرمان</option>
+                            <option value="23">هرمزگان</option>
+                            <option value="24">چهارمحال و بختیاری</option>
+                            <option value="25">یزد</option>
+                            <option value="26">سیستان و بلوچستان</option>
+                            <option value="27">ایلام</option>
+                            <option value="28">کهگلویه و بویراحمد</option>
+                            <option value="29">خراسان شمالی</option>
+                            <option value="30">خراسان جنوبی</option>
+                            <option value="31">البرز</option>
+                        </select>
+                        <span class="form-error">
+                            <strong>فیلد نام استان الزامی است</strong>
+                        </span>
+                    </div>
+                    <div class="input-group selected  left-">
+                        <select  id="city" type='button'  >
+                            <option value="0" >لطفا شهر را انتخاب نمایید</option>
+                        </select>
+                        <span class="form-error">
+                            <strong>فیلد نام شهر الزامی است</strong>
+                        </span>
+                    </div>
+                    <div class="input-group right-">
+                        <input type="text" name="parish_destination" placeholder="نام محله و یا روستای خود را بنویسید">
+                        <span class="form-error">
+                            <strong>فیلد نام محله و یا روستا الزامی است</strong>
+                        </span>
+                    </div>
+                    <div class="input-group left-">
+                        <input type="text" name="mainStreet_destination" placeholder="نام خیابان خود را بنویسید">
+                        <span class="form-error">
+                            <strong>فیلد نام خیابان الزامی است</strong>
+                        </span>
+                    </div>
+                    <div class="input-group right-">
+                        <input type="text" name="byStreet_destination" placeholder="نام خیابان فرعی خود را بنویسید">
+                        <span class="form-error">
+                            <strong>فیلد نام ‌ خیابان فرعی الزامی است</strong>
+                        </span>
+                    </div>
+                    <div class="input-group left-">
+                        <input type="text" name="alley_destination" placeholder="نام کوچه خود را بنویسید">
+                        <span class="form-error">
+                            <strong>فیلد نام کوچه الزامی است</strong>
+                        </span>
+                    </div>
+                    <input type="text" name="moreDetails_destination" placeholder="توضیحات بیشتر">
+                    <button class="login-btn" type="submit">ثبت آدرس کتبی مقصد</button>
+                    <input type="text" name="state_destination" readonly>
+                    <input type="text" name="city_destination" readonly>
+                </form>
+            </div>
+        </main>
+
+        <div class="footer-section">
+            <h3>تمامی‌ حقوق‌ این ‌وبسایت متعلق به شرکت توسعه گران تجارت نوین آسپاد میباشد و محفوظ است</h3>
+            <div class="contanct-us">
+                <a href="#">کیف پول شما</a>
+                <a href="#">تماس با پشتیبانی</a>
+            </div>
+        </div>
+
+        <script src="./js/panel-script.js"></script>
+    </body>
+</html>
